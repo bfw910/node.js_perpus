@@ -221,14 +221,14 @@ export const laporanPengembalian = async (req, res) => {
       const month = String(tglKembaliBeneran.getMonth() + 1).padStart(2, '0'); // Ditambah 1 karena bulan dimulai dari 0
       const day = String(tglKembaliBeneran.getDate()).padStart(2, '0');      
       const hitungHari = Math.ceil(selisihWaktu / (1000 * 3600 * 24));
-      const hariTerlambat = Math.max(0, hitungHari); // Jika minus/tepat waktu, jadi 0
+      //const hariTerlambat = Math.max(0, hitungHari); // Jika minus/tepat waktu, jadi 0
 
       return {
         nama_mahasiswa: item.pinjam.mahasiswa.nama,
         nama_buku: item.buku.judul,
         jumlah_pinjam: item.jml_pinjam + " buku",
         tanggal_pengembalian: `${year}-${month}-${day}`,// Format YYYY-MM-DD
-        jumlah_hari_terlambat: hariTerlambat,
+       // jumlah_hari_terlambat: hariTerlambat,
       };
     });
 
