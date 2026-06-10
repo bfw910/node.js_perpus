@@ -230,7 +230,6 @@ export const laporanPengembalian = async (req, res) => {
         jumlah_pinjam: item.jml_pinjam + " buku",
         tanggal_pengembalian: `${year}-${month}-${day}`,// Format YYYY-MM-DD
         jumlah_hari_terlambat: hariTerlambat,
-        selisih_waktu: selisihWaktu < 0 ? "Tepat waktu" : `${hariTerlambat} hari terlambat`
       };
     });
 
