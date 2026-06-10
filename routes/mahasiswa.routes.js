@@ -6,7 +6,7 @@ import {
     updateMahasiswa,
     deleteMahasiswa,
 } from "../controllers/mahasiswa.controllers.js";
-import { authenticateToken } from "../middlware/VerifyTokens.js";
+//import { authenticateToken } from "../middlware/VerifyTokens.js";
 
 const router = express.Router();
 

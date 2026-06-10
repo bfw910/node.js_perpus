@@ -9,7 +9,7 @@ import {
   kembalikanBuku,
   laporanPengembalian,
 } from "../controllers/pinjam.controller.js";
-import { authenticateToken } from "../middlware/VerifyTokens.js";
+//import { authenticateToken } from "../middlware/VerifyTokens.js";
 const router = express.Router();
 
 router.get("/",authenticateToken, getAllPinjam);
