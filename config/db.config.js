@@ -3,7 +3,7 @@ import mysql from "mysql2";
 
 const DBNAME = process.env.DB_NAME;
 const DBUSER = process.env.DB_USER;
-const DBPASS = process.env.DB_PASS;
+const DBPASS = process.env.DB_PASSWORD;
 const DBHOST = process.env.DB_HOST;
 const DBPORT = process.env.DB_PORT;
 
