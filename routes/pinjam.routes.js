@@ -12,12 +12,12 @@ import {
 //import { authenticateToken } from "../middlware/VerifyTokens.js";
 const router = express.Router();
 
-router.get("/",authenticateToken, getAllPinjam);
-router.get("/detail",authenticateToken, getAlldtalePinjam);
-router.get("/cekpinjam/:nim", authenticateToken, cariBukuDipinjam);
-router.post("/", authenticateToken, insertPinjam);
-router.post("/kembali/:nim", authenticateToken, kembalikanBuku);
-router.get("/laporan", authenticateToken, laporanPengembalian);
-router.get("/:nim", authenticateToken, cariPinjamByNim);
+router.get("/",/*authenticateToken,*/ getAllPinjam);
+router.get("/detail",/*authenticateToken,*/ getAlldtalePinjam);
+router.get("/cekpinjam/:nim", /*authenticateToken,*/ cariBukuDipinjam);
+router.post("/", /*authenticateToken,*/ insertPinjam);
+router.post("/kembali/:nim", /*authenticateToken,*/ kembalikanBuku);
+router.get("/laporan", /*authenticateToken,*/ laporanPengembalian);
+router.get("/:nim", /*authenticateToken,*/ cariPinjamByNim);
 
 export default router;

@@ -13,11 +13,11 @@ import {
     deleteBuku
 } from "../controllers/buku.controllers.js";   
 
-router.get("/",authenticateToken, getAllBuku);
-router.get("/:id",authenticateToken, cariBukuBYID);
-router.post("/",authenticateToken, tambahbukubaru);
-router.patch("/:id",authenticateToken, updateBuku);
-router.delete("/:id",authenticateToken, deleteBuku);
+router.get("/",/*authenticateToken,*/ getAllBuku);
+router.get("/:id",/*authenticateToken,*/ cariBukuBYID);
+router.post("/",/*authenticateToken,*/ tambahbukubaru);
+router.patch("/:id",/*authenticateToken,*/ updateBuku);
+router.delete("/:id",/*authenticateToken,*/ deleteBuku);
 
 
 export default router;

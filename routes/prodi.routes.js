@@ -10,10 +10,10 @@ import {
 
 const router = express.Router();
 
-router.get("/",authenticateToken, getAllProdi);
-router.post("/", authenticateToken, tambahProdi);
-router.get("/:kode", authenticateToken, getProdiByKode);
-router.patch("/:kode", authenticateToken, updateProdi);
-router.delete("/:kode", authenticateToken, deleteProdi);
+router.get("/",/*authenticateToken,*/ getAllProdi);
+router.post("/", /*authenticateToken,*/ tambahProdi);
+router.get("/:kode", /*authenticateToken,*/ getProdiByKode);
+router.patch("/:kode", /*authenticateToken,*/ updateProdi);
+router.delete("/:kode", /*authenticateToken,*/ deleteProdi);
 
 export default router;
